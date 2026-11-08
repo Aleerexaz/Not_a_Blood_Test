@@ -1,0 +1,33 @@
+# Stored forests. The paper refits from the feature table, and these files
+# are hundreds of megabytes each, including backups of the same model.
+*.joblib
+*.pkl
+
+# Installed packages and build output
+frontend/node_modules/
+frontend/dist/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local environment
+frontend/.env
+frontend/.env.local
+
+# Proprietary scanner SDK, traces, and empty capture folder
+Suprema/
+Suprema HQ Inc/
+sxstrace.*
+temp_scans/
+
+# Third-party fingerprint images. The Kaggle license is unknown.
+# The released artifact is features_clean_dataset.csv.
+clean_dataset/
+
+# Editor and preview scratch
+.vscode/
+paper/_chk/
+paper/_chk2/
+paper/_preview/
+paper/_rev/

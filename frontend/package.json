@@ -1,0 +1,23 @@
+{
+  "name": "bloodgroup-frontend",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "backend": "python -m uvicorn api_server:app --host 127.0.0.1 --port 8000 --reload --app-dir .. --reload-dir .. --reload-dir .",
+    "dev:all": "concurrently -n backend,frontend -c blue,green \"npm:backend\" \"vite --open\"",
+    "build": "vite build",
+    "preview": "vite preview --port 5173"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.9.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "concurrently": "^9.0.1",
+    "vite": "^5.4.0"
+  }
+}

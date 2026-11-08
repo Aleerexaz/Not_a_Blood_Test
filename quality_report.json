@@ -1,0 +1,66 @@
+{
+  "input_dir": "clean_dataset",
+  "rows": 7576,
+  "classes": [
+    "A+",
+    "A-",
+    "AB+",
+    "AB-",
+    "B+",
+    "B-",
+    "O+",
+    "O-"
+  ],
+  "per_class": {
+    "A+": {
+      "total": 1152,
+      "pass_quality": 1120,
+      "pass_rate": 97.22
+    },
+    "A-": {
+      "total": 1322,
+      "pass_quality": 1322,
+      "pass_rate": 100.0
+    },
+    "AB+": {
+      "total": 840,
+      "pass_quality": 774,
+      "pass_rate": 92.14
+    },
+    "AB-": {
+      "total": 1078,
+      "pass_quality": 1034,
+      "pass_rate": 95.92
+    },
+    "B+": {
+      "total": 698,
+      "pass_quality": 658,
+      "pass_rate": 94.27
+    },
+    "B-": {
+      "total": 879,
+      "pass_quality": 877,
+      "pass_rate": 99.77
+    },
+    "O+": {
+      "total": 774,
+      "pass_quality": 770,
+      "pass_rate": 99.48
+    },
+    "O-": {
+      "total": 833,
+      "pass_quality": 777,
+      "pass_rate": 93.28
+    }
+  },
+  "thresholds": {
+    "skeleton_pixels_min": 1500,
+    "orientation_entropy_max": 2.6,
+    "contrast_min": 60.0
+  },
+  "artifacts": {
+    "csv": "C:\\Users\\Lenovo\\Desktop\\Bloodgroup_website\\features_clean_dataset.csv",
+    "keep_list": "C:\\Users\\Lenovo\\Desktop\\Bloodgroup_website\\features_clean_dataset_keep.txt",
+    "bad_list": "C:\\Users\\Lenovo\\Desktop\\Bloodgroup_website\\features_clean_dataset_bad.txt"
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "feature_rows": 7576,
+  "n_features": 29,
+  "unique_sources": 3389,
+  "sources_with_a_copy": 3385,
+  "copy_relative_l2_median": 0.0,
+  "copy_relative_l2_p90": 0.0,
+  "eight_class_random": {
+    "mean": 0.8883025505716798,
+    "std": 0.003290815643600649,
+    "folds": [
+      0.883905,
+      0.889182,
+      0.891821
+    ]
+  },
+  "eight_class_grouped": {
+    "mean": 0.4752469248590116,
+    "std": 0.013212549702914118,
+    "folds": [
+      0.47987,
+      0.457256,
+      0.488614
+    ]
+  },
+  "abo_random": {
+    "mean": 0.9116094986807388,
+    "std": 0.0010771722703532159,
+    "folds": [
+      0.91029,
+      0.912929,
+      0.911609
+    ]
+  },
+  "abo_grouped": {
+    "mean": 0.523705363956117,
+    "std": 0.0070503952899633425,
+    "folds": [
+      0.531169,
+      0.514248,
+      0.525699
+    ]
+  },
+  "eight_majority_baseline": 0.1744984160506864,
+  "abo_majority_baseline": 0.32655755015839494,
+  "field_n": 339,
+  "field_user_correct": 64,
+  "field_user_correct_rate": 0.1887905604719764,
+  "field_user_wilson95": [
+    0.15070587497249766,
+    0.23384955820713987
+  ],
+  "field_abo_correct": 95,
+  "field_abo_rate": 0.28023598820059,
+  "field_abo_wilson95": [
+    0.2350939662973814,
+    0.33030299836501664
+  ],
+  "field_always_predict_O": 160,
+  "field_always_predict_O_rate": 0.471976401179941,
+  "field_true_abo": {
+    "A": 75,
+    "B": 70,
+    "AB": 34,
+    "O": 160
+  },
+  "field_pred_abo": {
+    "A": 19,
+    "B": 214,
+    "AB": 4,
+    "O": 102
+  },
+  "field_confusion_true_rows_pred_cols": {
+    "labels": [
+      "A",
+      "B",
+      "AB",
+      "O"
+    ],
+    "matrix": [
+      [
+        3,
+        51,
+        0,
+        21
+      ],
+      [
+        6,
+        42,
+        0,
+        22
+      ],
+      [
+        0,
+        19,
+        3,
+        12
+      ],
+      [
+        10,
+        102,
+        1,
+        47
+      ]
+    ]
+  },
+  "binom_abo_vs_uniform_quarter": {
+    "p_value": 0.20954314883450448
+  },
+  "binom_user_vs_one_eighth": {
+    "p_value": 0.0007269252191590612
+  },
+  "inventory": {
+    "A+": {
+      "files": 1152,
+      "unique_sources": 447
+    },
+    "A-": {
+      "files": 1322,
+      "unique_sources": 658
+    },
+    "B+": {
+      "files": 698,
+      "unique_sources": 313
+    },
+    "B-": {
+      "files": 879,
+      "unique_sources": 401
+    },
+    "AB+": {
+      "files": 840,
+      "unique_sources": 367
+    },
+    "AB-": {
+      "files": 1078,
+      "unique_sources": 473
+    },
+    "O+": {
+      "files": 774,
+      "unique_sources": 370
+    },
+    "O-": {
+      "files": 833,
+      "unique_sources": 360
+    }
+  },
+  "bmp_size_sample_counts": {
+    "96x103": 326,
+    "241x298": 6
+  },
+  "model": "RandomForestClassifier n_estimators=120 max_depth=20 min_samples_leaf=2 class_weight=balanced",
+  "splits": "3 x 80/20, random_state=42; grouped split keeps every copy of a source id together"
+}
